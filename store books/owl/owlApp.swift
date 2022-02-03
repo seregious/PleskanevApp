@@ -22,8 +22,8 @@ struct owlApp: App {
     
     var body: some Scene {
         WindowGroup {
-            TabView{
-                    TabMenuView()
+            NavigationView{
+                BookView()
             } .environmentObject(ListViewModel())
         }
     }
