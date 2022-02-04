@@ -24,7 +24,9 @@ struct owlApp: App {
         WindowGroup {
             NavigationView{
                 BookView()
-            } .environmentObject(ListViewModel())
+            }
+            .navigationViewStyle(StackNavigationViewStyle())
+            .environmentObject(ListViewModel())
         }
     }
 }
